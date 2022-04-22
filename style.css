@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap'); 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .2s linear;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+a:link, a:visited, a:hover, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* ***************************loader******************************** */
+
+
+#loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 2000;
+    background-color: black;
+}
+
+#loaderContainer img {
+    width: 50%;
+    border-radius: 15px;
+}
+
+
+/* ***************************section******************************** */
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* ***************************header******************************** */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    background-color: whitesmoke;
+    height: 50px;
+}
+
+#brand {
+    display: flex;
+    font-size: larger;
+}
+#brand i {
+    color: red
+}
+
+nav {
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+nav a {
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: lightgreen;
+    color: white;
+}
+
+.activeNav {
+    background-color: rgb(7, 232, 248);
+}
+
+.iconContainer {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(226, 223, 223);
+    margin: 0.25rem;
+}
+
+.navIcons {
+    margin: 0 0.25rem;
+    text-decoration: none;
+}
+.iconContainer:hover {
+    color: white;
+    transform: rotate(360deg);
+    background-color: lightgreen;
+}
+.iconContainer:hover a {
+    color: white;
+}
+
+#menuIcon {
+    display: none;
+}
+
+#search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:-110%;
+    left:0;
+    background-color: rgba(0,0,0,0.85);
+}
+
+
+#search-section form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-section input {
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    width: 400px;
+    height: 3rem;
+    font-size: 2.5rem;
+}
+
+#search-section input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+#search-cross {
+    color: white;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 2.5rem;
+}
+
+#search-section input::placeholder {
+    color: white;
+}
+
+#search-btn {
+    color: white;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 650px) {
+    #menuIcon {
+        display: inline-flex;
+    }
+
+    nav {
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    nav a {
+        display: block;
+        margin: 1rem;
+        background-color: rgb(226, 223, 223);
+    }
+}
+
+
+
+/* ***************************home******************************** */
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: beige;
+}
+
+.content {
+    margin: 1rem;
+}
+
+.content h3 {
+    margin-bottom: 0.5rem;
+    color: rgb(40, 40, 119);
+}
+
+.p1 {
+    margin-bottom: 0.5rem;
+    color: rgb(27, 192, 192);
+    font-size: 1.5rem;
+}
+.p2 {
+    margin-bottom: 1rem;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.content a {
+    margin-bottom: 0.5rem;
+}
+
+.image {
+    width: 50%;
+    margin: 1rem;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+a.btn {
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: rgb(64, 64, 175);
+    border-radius: 2.5px;
+    display: inline-block;
+}
+
+
+@media (max-width: 900px) {
+    .slide {
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
+    .content {
+        margin: 0rem;
+    }
+
+    .image {
+        width: 90%;
+        margin: 0;
+    }
+}
+
+
+
+/* ***************************dishes******************************** */
+
+#dishes {
+    text-align: center;
+}
+
+#dishes h1 {
+    margin-bottom: 0.5rem;
+}
+
+#dishes h3 {
+    margin-bottom: 2rem;
+}
+
+#dishesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    margin: 0 2rem;
+}
+
+.dish {
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.eyeContainer {
+    position: absolute;
+    top: 15px;
+    left: -50px;
+}
+
+.dish:hover .eyeContainer {
+    left: 15px;
+}
+
+.heartContainer {
+    position: absolute;
+    top: 15px;
+    right: -50px;
+}
+
+.dish:hover .heartContainer {
+    right: 15px;
+}
+
+/* ***************************about us******************************** */
+
+#about {
+   padding: 1rem;
+   background-color: lightgreen;
+}
+
+#about h3 {
+    margin-bottom: 0.5rem;
+}
+
+#about h1 {
+    margin-bottom: 1rem;
+}
+
+#aboutContainer {
+    display: flex;
+}
+
+#about img {
+    width: 500px;
+}
+
+#about-text {
+    text-align: justify;
+}
+
+#about-icons {
+    display: flex;
+}
+
+.about-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.about-icon i {
+    margin-right: 0.25rem;
+    color: purple;
+}
+
+#about a {
+    margin-top: 1rem;
+}
+
+@media (max-width: 1010px) {
+    #aboutContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #aboutContainer img {
+        width: 90%;
+    }
+}
+
+/* ***************************pista******************************** */
+
+#review {
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+#review h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#review h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.quoteSlide {
+    background-color: beige;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: justify;
+    position: relative;
+}
+
+.quoteSlide img {
+    border-radius: 50%;
+}
+
+.quote {
+    position: absolute;
+    right: 20px;
+    font-size: 3rem;
+}
+
+.person-name {
+    color: rgb(64, 64, 175);
+}
+
+.fa-star, .fa-star-half-alt {
+    color: gold;
+}
+
+/* ***************************order******************************** */
+
+#order {
+    text-align: center;
+    background-color: beige;
+    padding: 1rem;
+}
+
+#order h3 {
+    margin-bottom: 0.5rem;
+}
+
+#order h1 {
+    margin-bottom: 1rem;
+}
+
+.field {
+    display: inline-block;
+    width:40%;
+    margin-bottom: 0.5rem;
+    margin: 0.25rem 1rem;
+}
+
+.field p {
+    display: block;
+    text-align: start;
+    margin-bottom: 0.25rem;
+}
+
+.field input {
+    width: 100%;
+    height: 2.5rem;
+    background-color: lightgreen;
+    padding: 0.25rem;
+    border: none;
+    font-family: inherit;
+}
+
+.field input:focus {
+    outline: 2px solid rgb(64, 64, 175); 
+    border: 2px solid rgb(64, 64, 175); 
+}
+
+.field textarea {
+    width: 100%;
+    height: 7.5rem;
+    background-color: lightgreen;
+    padding: 0.25rem;
+    border: none;
+    resize: none;
+    font-family: inherit;
+}
+
+.field textarea:focus {
+    outline: 2px solid rgb(64, 64, 175); 
+    border: 2px solid rgb(64, 64, 175); 
+}
+
+#order-submit {
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: rgb(64, 64, 175);
+    border-radius: 2.5px;
+    display: block;
+    border: none;
+    margin: 2rem auto 0rem auto;
+}
+
+@media (max-width: 800px) {
+    .field {
+        width: 90%;
+    }
+}
+
+
+
+/* ***************************footer******************************** */
+
+#footerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#footerGrid h2 {
+    margin-bottom: 1rem;
+}
+
+#footerGrid p {
+    text-align: start;
+    color: grey;
+}
+
+#footerGrid a {
+    display: block;
+   color: rgb(64, 64, 175); 
+}
+
+#copyright {
+    padding-left: 0.5rem;
+}

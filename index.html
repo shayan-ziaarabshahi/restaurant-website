@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div id="loaderContainer">
+        <img src="./img/loader1.gif" alt="" id="loader">
+    </div>
+ 
+        <header>
+            <a href="#" id="brand">
+                <p>restaurant</p>
+                <i class="fas fa-utensils"></i>
+            </a>
+            <nav>
+                <a href="#home" id="nhome" class="navLinks">Home</a>
+                <a href="#dishes" id="ndishes" class="navLinks">Dishes</a>
+                <a href="#about" id="nabout" class="navLinks">About</a>
+                <a href="#review" id="nreview" class="navLinks">review</a>
+                <a href="#order" id="norder" class="navLinks">order</a>
+            </nav>
+            <div id="#icons">
+                <div class="iconContainer" id="menuIcon"><i class="fas fa-bars navIcons" id="menuIconInner"></i></div>
+                <div class="iconContainer" id="searchIcon"><i class="fas fa-search navIcons"></i></div>
+                <div class="iconContainer"><a href="" class="fas fa-heart navIcons"></a></div>
+                <div class="iconContainer"><a href="" class="fas fa-shopping-cart navIcons"></a></div>
+            </div>
+            <div id="search-section">
+                <form action="">
+                    <a><i class="fas fa-x" id="search-cross"></i></a>
+                    <input type="search" placeholder="search here ..." />
+                    <i class="fas fa-search" id="search-btn"></i>
+                </form>
+            </div>
+        </header>
+    
+        <section id="home">
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <p class="p1">our special dish</p>
+                            <h2>Monkey Bread</h2>
+                            <p class="p2">This monkey bread is the best thanks to simple, sweet ingredients.</p>
+                            <a href="" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="./img/home/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <p class="p1">our special dish</p>
+                            <h2>25 Beloved Bread Recipes From Grandma's Kitchen</h2>
+                            <p class="p2">These are the bread recipes that create warm, happy, scent-filled memories.</p>
+                            <a href="" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="./img/home/2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <p class="p1">our special dish</p>
+                            <h2>Whole Wheat Beer Bread</h2>
+                            <p class="p2">Good with soups, chili. Makes excellent toast. Flavor of bread will change</p>
+                            <a href="" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="./img/home/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    
+        <section id="dishes">
+            <h1>our dishes</h1>
+            <h3>popular dishes</h3>
+            <div id="dishesGrid">
+                <div class="dish">
+                    <div class="iconContainer eyeContainer"><i class="fas fa-eye"></i></div>
+                    <div class="iconContainer heartContainer"><i class="fas fa-heart"></i></div>
+                    <img src="./img/dishes/1.png" alt="">
+                    <p>tasty food</p>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>14.99$</p>
+                    <a href="" class="btn">add to card</a>
+                </div>
+                <div class="dish">
+                    <div class="iconContainer eyeContainer"><i class="fas fa-eye"></i></div>
+                    <div class="iconContainer heartContainer"><i class="fas fa-heart"></i></div>
+                    <img src="./img/dishes/2.png" alt="">
+                    <p>tasty food</p>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>14.99$</p>
+                    <a href="" class="btn">add to card</a>
+                </div>
+                <div class="dish">
+                    <div class="iconContainer eyeContainer"><i class="fas fa-eye"></i></div>
+                    <div class="iconContainer heartContainer"><i class="fas fa-heart"></i></div>
+                    <img src="./img/dishes/3.png" alt="">
+                    <p>tasty food</p>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>14.99$</p>
+                    <a href="" class="btn">add to card</a>
+                </div>
+                <div class="dish">
+                    <div class="iconContainer eyeContainer"><i class="fas fa-eye"></i></div>
+                    <div class="iconContainer heartContainer"><i class="fas fa-heart"></i></div>
+                    <img src="./img/dishes/4.png" alt="">
+                    <p>tasty food</p>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>14.99$</p>
+                    <a href="" class="btn">add to card</a>
+                </div>
+                <div class="dish">
+                    <div class="iconContainer eyeContainer"><i class="fas fa-eye"></i></div>
+                    <div class="iconContainer heartContainer"><i class="fas fa-heart"></i></div>
+                    <img src="./img/dishes/5.png" alt="">
+                    <p>tasty food</p>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>14.99$</p>
+                    <a href="" class="btn">add to card</a>
+                </div>
+                <div class="dish">
+                    <div class="iconContainer eyeContainer"><i class="fas fa-eye"></i></div>
+                    <div class="iconContainer heartContainer"><i class="fas fa-heart"></i></div>
+                    <img src="./img/dishes/6.png" alt="">
+                    <p>tasty food</p>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>14.99$</p>
+                    <a href="" class="btn">add to card</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="about">
+            <h3>about us</h3>
+            <h1>why choose us</h1>
+            <div id="aboutContainer">
+                <div id="about-img">
+                    <img src="./img/about-img.png" />
+                </div>
+                <div id="about-text">
+                    <h1>best food in the country</h1>
+                    <p>
+                        ABOUT US
+                        About
+                        The Spot Restaurant
+                        Craving some delicious Greek food? Maybe you’re in the mood for a juicy steak? No matter what kind
+                        of meal you have in mind, The Spot Restaurant is ready to prepare it for you.
+    
+                        Since 1973, The Spot Restaurant has been the go-to diner for residents of Binghamton, NY. Our diner
+                        serves breakfast all day, in addition to wholesome and flavorful dining options for lunch and
+                        dinner. From burgers to salads, seafood to pastas, you’ll find all kinds of hearty meals prepared
+                        fresh at The Spot Restaurant. Our diner also has a full bakery with delicious baked goods and other
+                        treats, including our famous cheesecake. Sounds delicious, right?
+    
+                        We’re here to serve you the best food around, whenever you’re looking for a great American
+                        restaurant in Binghamton, NY.</p>
+                    <div id="about-icons">
+                        <div class="about-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                            <p>free delivery</p>
+                        </div>
+                        <div class="about-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                            <p>easy payment</p>
+                        </div>
+                        <div class="about-icon">
+                            <i class="fas fa-headset"></i>
+                            <p>24/7 services</p>
+                        </div>
+                    </div>
+                    <a href="" class="btn">learn more</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="review">
+            <h3>customers review</h3>
+            <h1>what they say</h1>
+            <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide quoteSlide">
+                        <i class="fas fa-quote-right quote"></i>
+                        <div>
+                            <img src="./img/pic/1.png" alt="">
+                            <div>
+                                <p class="person-name">mehdi ahmadi</p>
+                                <div class="starBox">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent
+                            elementum. Turpis tincidunt id aliquet risus feugiat in ante. Sed odio morbi quis commodo odio
+                            aenean sed adipiscing.
+                        </p>
+                    </div>
+                    <div class="swiper-slide quoteSlide">
+                        <i class="fas fa-quote-right quote"></i>
+                        <div>
+                            <img src="./img/pic/2.png" alt="">
+                            <div>
+                                <p class="person-name">sahar mohammadi</p>
+                                <div class="starBox">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent
+                            elementum. Turpis tincidunt id aliquet risus feugiat in ante. Sed odio morbi quis commodo odio
+                            aenean sed adipiscing.
+                        </p>
+                    </div>
+                    <div class="swiper-slide quoteSlide">
+                        <i class="fas fa-quote-right quote"></i>
+                        <div>
+                            <img src="./img/pic/3.png" alt="">
+                            <div>
+                                <p class="person-name">kamran seyedi</p>
+                                <div class="starBox">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent
+                            elementum. Turpis tincidunt id aliquet risus feugiat in ante. Sed odio morbi quis commodo odio
+                            aenean sed adipiscing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="order">
+            <h3>order now</h3>
+            <h1>free and fast</h1>
+            <form action="">
+                <div class="field">
+                    <p>your name</p>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="field">
+                    <p>your number</p>
+                    <input type="text" placeholder="enter your number">
+                </div>
+                <div class="field">
+                    <p>your order</p>
+                    <input type="text" placeholder="enter your number">
+                </div>
+                <div class="field">
+                    <p>additional food</p>
+                    <input type="text" placeholder="extra with food">
+                </div>
+                <div class="field">
+                    <p>how much</p>
+                    <input type="text" placeholder="how many orders">
+                </div>
+                <div class="field">
+                    <p>date and time</p>
+                    <input type="datetime">
+                </div>
+                <div class="field">
+                    <p>your address</p>
+                    <textarea placeholder="enter your address"></textarea>
+                </div>
+                <div class="field">
+                    <p>your message</p>
+                    <textarea placeholder="enter your message"></textarea>
+                </div>
+                <input type="submit" value="order now" id="order-submit">
+            </form>
+        </section>
+    
+        <footer>
+            <div id="footerGrid">
+                <div class="col">
+                    <h2>locations</h2>
+                    <p>Paris</p>
+                    <p>New York</p>
+                    <p>Istanbul</p>
+                    <p>Shanghai</p>
+                    <p>Rome</p>
+                </div>
+                <div class="col">
+                    <h2>quick links</h2>
+                    <a href="#home">home</a>
+                    <a href="#dishes">dishes</a>
+                    <a href="#about">about</a>
+                    <a href="#review">review</a>
+                    <a href="#order">order</a>
+                </div>
+                <div class="col">
+                    <h2>contact info</h2>
+                    <p>+123-456-7890</p>
+                    <p>+111-222-3333</p>
+                    <p>pista.academy@gmail.com</p>
+                    <p>shayan_ziaarabshahi@yahoo.com</p>
+                    <p>Florida, US - 402531</p>
+                </div>
+                <div class="col">
+                    <h2>follow us</h2>
+                    <p>Facebook</p>
+                    <p>Tweeter</p>
+                    <p>Instagram</p>
+                    <p>Linkedin</p>
+                </div>
+            </div>
+            <hr>
+            <p id="copyright">Copyright &copy; Pista Academy - 2021</p>
+        </footer>
+    
+        <script src="./app.js"></script>
+        <script>
+            
+        </script>
+    
+</body>
+
+</html>
